@@ -9,7 +9,7 @@ name: Michael Kleinman
 description: PhD Candidate
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: [!_config.yml](images/MichaelKleinman-headshot.png)
+avatar: https://avatars0.githubusercontent.com/u/24724441?s=400&u=2c3d712ab934036d9824071368c37c90d2b9ee89&v=4
 
 #
 # Flags below are optional
