@@ -9,4 +9,4 @@ I recently started a PhD at UCLA, with a focus on machine learning and neural co
 
 ### Contact me
 
-[michael [dot] kleinman [at] ucla [dot] edu](mailto:michael.kleinman@ucla.edu)
+[michael.kleinman@ucla.edu](mailto:michael.kleinman@ucla.edu)
