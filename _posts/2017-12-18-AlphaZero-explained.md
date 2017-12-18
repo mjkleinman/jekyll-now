@@ -5,7 +5,7 @@ title: AlphaZero Explained (for chess players)
 
 Last week was pretty exciting for chess. 
 Google DeepMind published a [paper](https://arxiv.org/abs/1712.01815) detailing how they created a chess engine, AlphaZero, that was able to crush the worlds top computer program, Stockfish, beginning only with knowledge of the rules of the game. 
-Unfortunately, to many interested chess players, the details behind the algorithms - the methods AlphaZero was employing to make their moves - remains a complete mystery. 
+Unfortunately, to many interested chess players, the details behind the algorithms -- the methods AlphaZero was employing to make their moves -- remains a complete mystery. 
 I’m hoping this post will give an overview of how AlphaZero was coming up its moves. 
 
 **So how is AlphaZero coming up with its moves?**
@@ -20,7 +20,7 @@ So for now, let’s suppose that we have a way to do this - that given any posit
 To get a more accurate assessment of the position — to validate our intuition — we need figure out the evaluations of the subsequent positions that might arise.
 A reasonable way to search through the possible positions might be to focus our search on the moves with the highest probability of occurring. 
 We could continue the game, evaluating each subsequent position with our “intuition function” and continue choosing the move with the highest possible probability of occurring, until we reach the end of the game.
-In subsequent iterations of the search we’d need to incorporate the knowledge of whether the position(s) we searched resulted in a positive result, as well as explore new positions (as our intuition function just needs to be good - not perfect). 
+In subsequent iterations of the search we’d need to incorporate the knowledge of whether the position(s) we searched resulted in a positive result, as well as explore new positions (as our intuition function just needs to be good -- not perfect). 
 Both of these tradeoffs are incorporated into the Monte Carlo Search Tree, used in the AlphaZero. 
 As long as we have a reasonable "intuition function”, a reasonable way of characterizing the available moves in a position, we can search through the resulting positions efficiently. 
 The search itself basically refines our intuition, it performs a sort of averaging of the resulting positions. We can think of the search as a function that takes in as inputs the initial move probabilities, and spits a more accurate, set of final move probabilities.
