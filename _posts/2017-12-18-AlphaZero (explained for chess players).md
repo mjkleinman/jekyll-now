@@ -2,15 +2,8 @@
 layout: post
 title: AlphaZero Explained (for chess players)
 ---
-The following is a snippet from a (really candid) interview of former world champion Vishy Anand with Grandmaster Maurice Ashley, during which they discussed AlphaZero.
 
-“I’d like to see more info now… I read through the paper, and it was incompressible to me” - Vishy Anand 
-“Me too.” - Maurice Ashley laughed in agreement
-https://www.youtube.com/watch?v=vCB1ZOCOewg
-
-...
-
-Last week was probably was pretty exciting for chess. Google DeepMind published a paper detailing how they created a chess engine, AlphaZero, that was able to crush the worlds top computer program, Stockfish, beginning only with knowledge of the rules of the game. Unfortunately, to many interested chess players like Vishy Anand, the details behind the algorithms - the methods AlphaZero was employing to make their moves — remains a complete mystery. I’m hoping this post will give an overview of how AlphaZero was coming up with the moves it was making. 
+Last week was pretty exciting for chess. Google DeepMind published a paper detailing how they created a chess engine, AlphaZero, that was able to crush the worlds top computer program, Stockfish, beginning only with knowledge of the rules of the game. Unfortunately, to many interested chess players, the details behind the algorithms - the methods AlphaZero was employing to make their moves — remains a complete mystery. I’m hoping this post will give an overview of how AlphaZero was coming up with the moves it was making. 
 
 **So how is AlphaZero coming up with its moves?**
 
