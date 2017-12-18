@@ -5,7 +5,7 @@ title: AlphaZero Explained (for chess players)
 
 Last week was pretty exciting for chess. 
 Google DeepMind published a [paper](https://arxiv.org/abs/1712.01815) detailing how they created a chess engine, AlphaZero, that was able to crush the worlds top computer program, Stockfish, beginning only with knowledge of the rules of the game. 
-Unfortunately, to many interested chess players, the details behind the algorithms -- the methods AlphaZero was employing to make their moves -- remains a complete mystery. 
+Unfortunately, to many interested chess players, the details behind the algorithms - the methods AlphaZero was employing to make their moves - remains a complete mystery. 
 I’m hoping this post will give an overview of how AlphaZero was coming up its moves. 
 
 **So how is AlphaZero coming up with its moves?**
