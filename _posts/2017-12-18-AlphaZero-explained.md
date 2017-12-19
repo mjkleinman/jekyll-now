@@ -50,7 +50,7 @@ It turns out that given sufficiently large training data, we can usually tune th
 In our case, our output consists of the initial move probabilities, outputted by our “intuition function”, or neural network, as well as a term that corresponds to the expected value of the game, given the current position.
 After a game of self play, we have the final result of the game, and can therefore minimize the difference between the actual and expected outcomes. 
 We can tune the weights such that they should have produced the actual outputs.
-To improve the initial move probabibilites outputted by the neural network, we would need a characterization of improved move probability distributions, so that our weights could be tuned to reflect the improved probability distribution. 
+To improve the initial move probabilities outputted by the neural network, we would need a characterization of improved move probability distributions, so that our weights could be tuned to reflect the improved probability distribution. 
 Our improved move probability distribution takes the form of the probability distribution after our search, which we have for each move! 
 So, we can have a cost function that includes both a term that minimizes the difference between actual and expected outcome, as well as a term that minimizes the difference between initial and final move probability distributions. 
 
