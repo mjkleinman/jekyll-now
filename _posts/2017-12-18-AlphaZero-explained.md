@@ -26,7 +26,7 @@ To get a more accurate assessment of the position — to validate our intuition 
 A reasonable way to search through the possible positions might be to focus our search on the moves with the highest probability of occurring. 
 We could continue the game, evaluating each subsequent position with our “intuition function” and continue choosing the move with the highest probability of occurring, until we reach the end of the game.
 In subsequent iterations of the search we could incorporate the knowledge of whether the position(s) we searched resulted in a positive result, as well as explore new positions (because our intuition function does not need to be perfect and need not find the best move initially). 
-This is how earlier versions of AlphaZero (applied to Go worked). 
+This is how earlier versions of AlphaZero (applied to Go) worked. 
 
 In this version of AlphaZero, an approximate position evaluation is employed as a proxy for the result of the game, allowing the search to terminate early and instead focus on positions whose evaluations are more relevant to the root game position. 
 As long as our "intuition function” is reasonable — as long as we can reasonably characterize the available moves in a position, the information gained when evaluating the positions in our search should be informative to the initial root position.
