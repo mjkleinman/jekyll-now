@@ -49,14 +49,12 @@ In our case, our output consists of the initial move probabilities, outputted by
 After a game of self play, we have the final result of the game, and can therefore minimize the difference between the actual and expected outcomes. 
 We can tune the weights such that they should have produced the actual outputs.
 To improve the initial move probabibilites outputted by the neural network, we would need a characterization of improved move probability distributions, so that our weights could be tuned to reflect the improved probability distribution. 
-If only, we had a more accurate assessment of the true move probability distributions… 
-The thing is we actually do have more accurate move probability assessments — these were the move probabilities after our search! 
-And not only that, we have the initial and final move probability distributions for each move.
-So, we can have a cost function that includes both a term that minimizes the difference between actual and expected outcome, as well as a term that minimizes the difference between initial and final move probabilities. 
+Our improved move probability distribution takes the form of the probability distribution after our search, which we have for each move! 
+So, we can have a cost function that includes both a term that minimizes the difference between actual and expected outcome, as well as a term that minimizes the difference between initial and final move probability distributions. 
 
 To be able to tune our weights to train our neural network or "intuition function", we need lots of data. 
 In the case of this paper, they create their own data, by pitting the current version of neural network parameters against previous versions. 
-By playing millions of training games, and by tuning the weights to match more accurate move probabilities, the neural network is effectively trained to look for important patterns, characteristics, or features of a position. 
+By playing millions of training games, and by tuning the weights to match the more accurate move probability distributions, the neural network is effectively trained to look for important patterns, characteristics, or features of a position. 
 Then, at the end, just by looking at a position, it is able to have a reasonable characterization of the most likely moves in the position, which it can then use to guide its search.
 
 **Concluding thoughts**
