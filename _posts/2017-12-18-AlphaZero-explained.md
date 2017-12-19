@@ -21,10 +21,10 @@ This is what AlphaZero does and what separates it from traditional chess engines
 
 Lets suppose we were designing a chess engine.
 If we had a way to get a reasonable characterization of potential strong moves in the position without going into depth in the position, we might be able to use this “intuition” to guide our search. 
-So for now, let’s suppose that we have a way to do this - that given any position, we can reasonably quantify the probabilities of an expert making each possible move. 
+So for now, let’s suppose that we have a way to do this — that given any position, we can reasonably quantify the probabilities of an expert making each possible move. 
 To get a more accurate assessment of the position — to validate our intuition — we need figure out the evaluations of the subsequent positions that might arise.
 A reasonable way to search through the possible positions might be to focus our search on the moves with the highest probability of occurring. 
-We could continue the game, evaluating each subsequent position with our “intuition function” and continue choosing the move with the highest possible probability of occurring, until we reach the end of the game.
+We could continue the game, evaluating each subsequent position with our “intuition function” and continue choosing the move with the highest probability of occurring, until we reach the end of the game.
 In subsequent iterations of the search we’d need to incorporate the knowledge of whether the position(s) we searched resulted in a positive result, as well as explore new positions (because our intuition function does not need to be perfect and need not find the best move initially). 
 Both of these tradeoffs are incorporated into the Monte Carlo Search Tree, used in the AlphaZero. 
 As long as we have a reasonable "intuition function”, a reasonable way of characterizing the available moves in a position, we can search through the resulting positions efficiently. 
