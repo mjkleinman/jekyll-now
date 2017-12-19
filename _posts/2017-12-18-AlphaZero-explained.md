@@ -29,7 +29,7 @@ In subsequent iterations of the search we could incorporate the knowledge of whe
 This is how earlier versions of AlphaZero (applied to Go worked). 
 In this version of AlphaZero, an approximate position evaluation is employed as a proxy for the result of the game, allowing  the search to focus on positions whose evaluations are more relevant to the root game position. 
 As long as our "intuition function” is reasonable — as long as we can reasonably characterize the available moves in a position, the information gained when evaluating the positions in our search should be informative to the initial root position.
-The search itself basically refines our intuition, performing a sort of averaging of the resulting positions. 
+The search itself basically refines our initial intuition, performing a sort of averaging of the resulting positions. 
 We can think of the search as a function that takes in as inputs the initial move probabilities, and spits out a more accurate set of final move probabilities.
 
 We relied heavily of having what I called an “intuition function”, a way of evaluating a given position, without going into a position’s depth. 
