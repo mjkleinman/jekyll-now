@@ -61,7 +61,7 @@ Then, at the end, just by looking at a position, it is able to have a reasonable
 
 **Concluding thoughts**
 
-Some of the games that AlphaZero played were truly special - its ability to weight piece activity, and play long-term positional material sacrifices was quite remarkable. 
+Some of the games that AlphaZero played were truly special — its ability to weight piece activity, and play long-term positional material sacrifices was quite remarkable. 
 It was the first time, for many chess players, that we were blown away by computer chess. 
 
 I’d be really curious to know how similar, after training, the initial move probabilities are from the final move probability distributions. 
