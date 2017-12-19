@@ -65,5 +65,5 @@ Some of the games that AlphaZero played were truly special — its ability to we
 It was the first time, for many chess players, that we were blown away by computer chess. 
 
 I’d be really curious to know how similar, after training, the initial move probabilities are from the final move probability distributions. 
-Moreover, based on the potential similarity, or lack thereof, can we perhaps characterize certain positions, in the sense that less concrete positions, those of a more “positional nature” might have initial move probabilities more similar to final move probabilities, whereas tactical positions perhaps consist of bigger differences between the initial and final move probabilities? 
+Moreover, based on the potential similarity, or lack thereof, can we perhaps characterize certain positions, in the sense that less concrete positions, those of a more “positional nature” might have initial move probabilities more similar to final move probabilities, whereas tactical positions perhaps consist of bigger differences between the initial and final move probability distributions? 
 
