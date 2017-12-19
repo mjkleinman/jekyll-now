@@ -3,7 +3,7 @@ layout: post
 title: AlphaZero Explained (for chess players)
 ---
 
-Last week was pretty exciting for chess. 
+The last two weeks were pretty exciting for chess. 
 Google DeepMind published a [paper](https://arxiv.org/abs/1712.01815) detailing how they created a chess engine, AlphaZero, that was able to crush the top computer program, Stockfish, beginning only with knowledge of the rules of the game. 
 The games were pretty remarkable.
 Unfortunately, to many interested chess players, the details behind the algorithms — the methods AlphaZero was employing to make their moves — remains a complete mystery. 
@@ -41,7 +41,7 @@ In our case, we need to somehow transform the input — that is a given position
 A neural network sounds mysterious, but is actually made up of very understandable components. 
 It consists of layers, with each layer performing a different operation, as well as connections between the layers. 
 These connections are often called “weights”, and correspond to how important the previous layers are (i.e how much the values from the previous layers need to be weighted).
-The exact architecture of the network, for instance the number of layers and also their type, is a bit of a mystery, even for researchers who study neural networks extensively. 
+The exact architecture of the network, for instance the number of layers and their type, is a bit of a mystery, even for researchers who study neural networks extensively. 
 It still is an empirical science, and certain architectures are found to work better for certain tasks.
 
 It turns out that given sufficiently large training data, we can usually tune these weights in such a way that they can produce the desired outputs.
@@ -63,5 +63,5 @@ Some of the games that AlphaZero played were truly special — its ability to we
 It was the first time, for many chess players, that we were blown away by computer chess. 
 
 I’d be really curious to know how similar, after training, the initial move probabilities are from the final move probability distributions. 
-Moreover, based on the potential similarity, or lack thereof, can we perhaps characterize certain positions, in the sense that less concrete positions, those of a more “positional nature” might have initial move probabilities more similar to final move probabilities, whereas tactical positions perhaps consist of bigger differences between the initial and final move probability distributions? 
+Moreover, based on the potential similarity, or lack thereof, can we perhaps characterize certain positions, in the sense that less concrete positions, those of a more “positional nature” might have initial move probability distributions more similar to final move probabilitiy distributions, whereas tactical positions perhaps consist of larger differences between the initial and final move probability distributions? 
 
