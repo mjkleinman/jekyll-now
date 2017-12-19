@@ -5,6 +5,7 @@ title: AlphaZero Explained (for chess players)
 
 Last week was pretty exciting for chess. 
 Google DeepMind published a [paper](https://arxiv.org/abs/1712.01815) detailing how they created a chess engine, AlphaZero, that was able to crush the top computer program, Stockfish, beginning only with knowledge of the rules of the game. 
+The games were pretty remarkable.
 Unfortunately, to many interested chess players, the details behind the algorithms — the methods AlphaZero was employing to make their moves — remains a complete mystery. 
 I’m hoping this post will give an overview of how AlphaZero was coming up its moves. 
 
@@ -13,9 +14,12 @@ I’m hoping this post will give an overview of how AlphaZero was coming up its 
 Imagine we had a way to estimate the probabilities for "an expert” to make each available move in a chess position, without searching at depth. 
 That is, just by looking at the position, could there be some intrinsic patterns, that in itself might suggest the moves that should be played? 
 For instance, if one player has a passed pawn, we might expect that the move of advancing this pawn might be given a high probability, given the general rule that “passed pawns must be pushed".
-Of course, these “instincts” into a position need to be investigated, for any agent that plays chess — and this is what is known as calculating variations, or going into depth in a position.
+Of course, these “instincts” into a position would need to be investigated, and this is done by evaluating the possible resulting positions. 
+This is what has allowed tradional chess engines to play the game so well, as they can search through millions of positions per second. 
+If engines could somehow focus their search on promising variations, they could potentially play even stronger, and this is what separates AlphaZero from traditional chess engines.
 
-So if we had some way to get a reasonable characterization of potential strong moves in the position without going into depth into the position, we might be able to use this “intuition” to guide our search. 
+Lets suppose we were designing a chess engine.
+If we had a way to get a reasonable characterization of potential strong moves in the position without going into depth into the position, we might be able to use this “intuition” to guide our search. 
 So for now, let’s suppose that we have a way to do this - that given any position, we can reasonably quantify the probabilities of an expert making each possible move. 
 To get a more accurate assessment of the position — to validate our intuition — we need figure out the evaluations of the subsequent positions that might arise.
 A reasonable way to search through the possible positions might be to focus our search on the moves with the highest probability of occurring. 
