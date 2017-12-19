@@ -37,7 +37,7 @@ AlphaZero achieves this through what is called a neural network, which sounds co
 **What is a neural network?**
 
 A neural network is a nonlinear function that simply put, transforms inputs to outputs. 
-In our case, we need to somehow transform the input - that is a given position - into a set of move probabilities (and also an expected value output). 
+In our case, we need to somehow transform the input — that is a given position — into a set of move probabilities (and also an expected value output). 
 A neural network sounds mysterious, but is actually made up of very understandable components. 
 It consists of layers, with each layer performing a different operation, as well as connections between the layers. 
 These connections are often called “weights”, and correspond to how important the previous layers are (i.e how much the values from the previous layers need to be weighted).
