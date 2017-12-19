@@ -29,7 +29,7 @@ In subsequent iterations of the search we’d need to incorporate the knowledge 
 Both of these tradeoffs are incorporated into the Monte Carlo Search Tree, used in the AlphaZero. 
 As long as we have a reasonable "intuition function”, a reasonable way of characterizing the available moves in a position, we can search through the resulting positions efficiently. 
 The search itself basically refines our intuition, it performs a sort of averaging of the resulting positions.
-We can think of the search as a function that takes in as inputs the initial move probabilities, and spits a more accurate set of final move probabilities.
+We can think of the search as a function that takes in as inputs the initial move probabilities, and spits out a more accurate set of final move probabilities.
 
 We relied heavily of having what I called an “intuition function”, a way of evaluating a given position, without going into a position’s depth. 
 AlphaZero achieves this through what is called a neural network, which sounds complicated, but is basically a collection of variable weights that can be tuned to achieve a particular function.
