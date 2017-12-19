@@ -15,9 +15,9 @@ Imagine we had a way to estimate the probabilities for "an expert” to make eac
 That is, just by looking at the position, could there be some intrinsic patterns, that in itself might suggest the moves that should be played? 
 For instance, if one player has a passed pawn, we might expect that advancing this pawn might be given a high probability, given the general rule that “passed pawns must be pushed".
 Of course, these “instincts” into a position need to be investigated, and this is done by evaluating the possible resulting positions. 
-This is what has allowed tradional chess engines to play the game so well, as they can search through millions of positions per second. 
+This is what has allowed tradional chess engines to play the game so well. They can search through millions of positions per second. 
 If engines could somehow focus their search on promising variations, they could potentially play even stronger. 
-This is what separates AlphaZero from traditional chess engines.
+This is what AlphaZero does and what separates it from traditional chess engines.
 
 Lets suppose we were designing a chess engine.
 If we had a way to get a reasonable characterization of potential strong moves in the position without going into depth in the position, we might be able to use this “intuition” to guide our search. 
