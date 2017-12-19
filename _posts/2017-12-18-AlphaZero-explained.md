@@ -26,10 +26,10 @@ To get a more accurate assessment of the position — to validate our intuition 
 A reasonable way to search through the possible positions might be to focus our search on the moves with the highest probability of occurring. 
 We could continue the game, evaluating each subsequent position with our “intuition function” and continue choosing the move with the highest probability of occurring, until we reach the end of the game.
 In subsequent iterations of the search we could incorporate the knowledge of whether the position(s) we searched resulted in a positive result, as well as explore new positions (because our intuition function does not need to be perfect and need not find the best move initially). 
-If we could approximate the expected value of the game, given a current position, we would not need to evaluate the entire game. 
-This idea of early termination is incorporated into the Monte Carlo Search Tree used in the AlphaZero and allows the search to focus on the positions whose evaluations are more relevant to the root game position. 
-As long as we have a reasonable "intuition function”, a reasonable way of characterizing the available moves in a position, we can search through the resulting positions efficiently. 
-The search itself basically refines our intuition, it performs a sort of averaging of the resulting positions.
+This is how earlier versions of AlphaZero (applied to Go worked). 
+In this version of AlphaZero, an approximate position evaluation is employed as a proxy for the result of the game, allowing  the search to focus on positions whose evaluations are more relevant to the root game position. 
+As long as our "intuition function” is reasonable — as long as we can reasonably characterize the available moves in a position, the information gained when evaluating the positions in our search should be informative to the initial root position.
+The search itself basically refines our intuition, performing a sort of averaging of the resulting positions. 
 We can think of the search as a function that takes in as inputs the initial move probabilities, and spits out a more accurate set of final move probabilities.
 
 We relied heavily of having what I called an “intuition function”, a way of evaluating a given position, without going into a position’s depth. 
